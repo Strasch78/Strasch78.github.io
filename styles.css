@@ -47,9 +47,29 @@ body {
     animation-delay: 3s;
 }
 
+
 @keyframes animate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.slide-text {
+    animation: slideLeft 10s linear infinite;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -59,7 +79,7 @@ body {
     border-radius: 8px;
     background: #24232a;
     z-index: 10;
-    padding: 50px 40px;
+    padding: 2px 40px;
     display: flex;
     flex-direction: column;
 }

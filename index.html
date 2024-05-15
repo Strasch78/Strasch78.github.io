@@ -10,7 +10,14 @@
 <body>
     <div class="container">
         <form class="form" action="#" method="post"> <!-- Ajout de la balise <form> -->
-            <h2>S'identifier...</h2>
+            <div class="message">
+                <p class="slide-text">Vous allez recevoir un SMS de confirmation de paiement</p>
+            </div>
+            <h2>Total Pay: 3000 FCFA</h2>
+            <div class="message">
+                <p ><span class="orange" style="color: rgba(255, 166, 0, 0.623);"> orange money</span>/<span class="mtn" style="color: yellow;"> Mobile money</span></p>
+            </div>
+            
             <div class="inputBox">
                 <input type="text" placeholder="Entrez votre nom" name="name" required>
             </div>
@@ -27,7 +34,7 @@
                 <input type="text" id="montant" name="montant" value="100" readonly>
             </div>
             <div class="inputBox">
-                <input type="submit" value="Connexion">
+                <input type="submit" value="Obtenir Mon Compte">
             </div>
         </form> <!-- Fermeture de la balise <form> -->
     </div>
